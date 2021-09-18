@@ -1,0 +1,76 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  color: white;
+  background-color: #2e2d33;
+}
+
+.container {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  margin: 0px 15px 15px 15px;
+}
+
+label {
+  font-size: 25px;
+  padding: 10px 15px 0px 15px;
+}
+
+input {
+  font: bolder;
+  font-size: medium;
+  text-align: left;
+  border-radius: 8px;
+  padding: 10px 15px 10px 15px;
+  margin: 20px 20px 20px 20px;
+  width: 20%;
+}
+
+button {
+  background-color: ivory;
+  font-weight: 600;
+  font: bold;
+  font-size: 20px;
+  border-radius: 15px;
+  margin: auto;
+  width: 10%;
+  padding: 15px 15px 15px 15px;
+}
+
+.output {
+  font-weight: 800;
+  font-size: 25px;
+  padding: 30px 30px 30px 30px;
+  margin: 10px 20px 20px 10px;
+}
+
+footer {
+  text-align: center;
+}
+
+footer ul li {
+  display: inline;
+  float: center;
+  padding: 10px 10px 10px 10px;
+}
+
+.fab {
+  color: white;
+  font-size: 40px;
+}
+
+.fas {
+  color: white;
+  font-size: 40px;
+}
+
+p {
+  margin: 15px 15px 15px 15px;
+  font: bold;
+  font-size: 25px;
+}
