@@ -13,7 +13,7 @@ function calcProfitAndLoss(initial, quantity, current) {
     document.querySelector(".output").style.color = "red";
     document.querySelector(".input").type = "number";
     showMsg(
-      `Hey Your Loss is ${loss} and The Percent is ${number(lossPerc)} %`
+      `Hey Your Loss is ${loss} and The Percent is ${lossPerc.toFixed(2)} %`
     );
   } else if (current > initial) {
     // profit
@@ -22,7 +22,9 @@ function calcProfitAndLoss(initial, quantity, current) {
     document.querySelector(".output").style.color = "green";
     document.querySelector(".input").type = "number";
     showMsg(
-      `Hey Your Profit is ${profit} and The Percent is ${number(profitPerc)} %`
+      `Hey Your Profit is ${profit} and The Percent is ${profitPerc.toFixed(
+        2
+      )} %`
     );
   } else {
     showMsg("Better Luck Next Time");
@@ -39,10 +41,6 @@ function submitHandler() {
 
 function showMsg(message) {
   output.innerHTML = message;
-}
-
-function number(x) {
-  return Number.parseFloat(x).toFixed(2);
 }
 
 submitbtn.addEventListener("click", submitHandler);
